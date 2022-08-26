@@ -1,4 +1,4 @@
-# From-HapMap-to-population-structure-throught-K-means
+# From HapMap to population structure throught K-means
 Work flow with unsupervided learning algorithm for population structure calculation
 
 The Hapmap Project was initiated in 2001 by the International HapMap Consortium. Its database is freely available to the public through the NCBI database dbSNP. The Project is also described at Nature 426 :789-796, 2003 [PMID: 14685227]. The file format estabilished through the project is also used in others projects and species.
