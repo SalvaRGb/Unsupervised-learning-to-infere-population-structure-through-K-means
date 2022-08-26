@@ -1,5 +1,11 @@
 # From HapMap to population structure throught K-means
-Work flow with unsupervided learning algorithm for population structure calculation
+Work flow with unsupervided learning algorithm for population structure inference.
+
+Clustering techniques and are powerfull tools to help us 
+
+Handling genotype data typed at hundreds of thousands of loci is a very time-consuming task, specially for population structure inference. Tools such as STRUCTURE (one of the most used and common software design for this purpose) based on **Markov chain Monte Carlo** are very time consuming. 
+
+From the perspective of machine learning, dealing with high-dimensional data usually involves preprocessing the data with dimension reduction and feature selection techniques. In addition, clustering techniques such as k-Means, in combination with dimension reduction algorithms such as *Principal component analysis* (**PCA**), may outperforme traditional algorithms and population structure techniques in terms of computational time, while competing in precision.  
 
 The Hapmap Project was initiated in 2001 by the International HapMap Consortium. Its database is freely available to the public through the NCBI database dbSNP. The Project is also described at Nature 426 :789-796, 2003 [PMID: 14685227]. The file format estabilished through the project is also used in others projects and species.
 The Hapmap file format is a table which consists of 11 columns plus one column for each sample genotyped. The first row contains the header labels of your samples, and each additional row contains all the information associated with a single SNP. You can get a Hapmap file by chromosome or a general file.
