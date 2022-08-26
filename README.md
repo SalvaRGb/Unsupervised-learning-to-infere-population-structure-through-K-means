@@ -23,10 +23,10 @@ Gentoypes follows the **IUPAC** system for nucleotide codification:
 
 | Nucleotide | Common display | Meaning |
 | :---: | :---: | :---: |
-| A | A | A |
-| C | C | C |
-| G | G | G |
-| T (or U) | T | T (or U) |
+| A | A | Adenine |
+| C | C | Cytosine |
+| G | G | Guanine |
+| T (or U) | T | T (or U) (Thyamine or Uracile)|
 | R | A/G | A or G |
 | Y | C/T | C or T (or U) |
 | K | G/T | G or T (or U) |
