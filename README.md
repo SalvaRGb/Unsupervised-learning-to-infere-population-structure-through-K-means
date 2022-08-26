@@ -4,6 +4,8 @@ Work flow with unsupervided learning algorithm for population structure calculat
 The Hapmap Project was initiated in 2001 by the International HapMap Consortium. Its database is freely available to the public through the NCBI database dbSNP. The Project is also described at Nature 426 :789-796, 2003 [PMID: 14685227]. The file format estabilished through the project is also used in others projects and species.
 The Hapmap file format is a table which consists of 11 columns plus one column for each sample genotyped. The first row contains the header labels of your samples, and each additional row contains all the information associated with a single SNP. You can get a Hapmap file by chromosome or a general file.
 
+The tables usually contains the following attributes:
+
 - **rs#** contains the SNP identifier;
 - **alleles** contains SNP alleles according to NCBI database dbSNP;
 - **chrom** contains the chromosome that the SNP was mapped;
@@ -17,4 +19,24 @@ The Hapmap file format is a table which consists of 11 columns plus one column f
 - **QCcode** contains the quality control for all entries;
 **subsequently, the list of sample names**.
 
+Gentoypes follows the **IUPAC** system for nucleotide codification:
+
+| Nucleotide | Common display | Meaning |
+| :---: | :---: | :---: |
+| A | A | A |
+| C | C | C |
+| G | G | G |
+| T (or U) | T | T (or U) |
+| R | A/G | A or G |
+| Y | C/T | C or T (or U) |
+| K | G/T | G or T (or U) |
+| M | A/C | A or C |
+| S | C/G | C or G |
+| W | A/T | A or T |
+| B | C/G/T | Not A; C, G, T or U |
+| D | A/G/T | Not C; A, G, T or U  |
+| H | A/C/T | Not G; C, A, T or U  |
+| V | A/C/G | Not T or U; C, G, A  |
+| N | A/C/G/T | any base |
+| . or - | - | Gap of indeterminate lenght |
 
