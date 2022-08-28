@@ -11,7 +11,7 @@ The pipline described in this repository follows a logical process that involves
 - **Filtering and extracting useful genetic information for a properly configuration of the genetic matrix (working with HapMap files)**
   * Using the *HapMap_organizer.py* in order to decode the HapMap structure and contruct a customized genetic-marker matrix for population structure inference, this preprocessing involves:
      * Extraction and/or addition of homozygous and heterozygous
-     * Imputation of nan values present in the result matrix**
+     * Imputation of nan values present in the result matrix
 - **Selecting the best possible principal components to represent the data**
 - **Apply k-means algorithm to the new features for population inference**
 
