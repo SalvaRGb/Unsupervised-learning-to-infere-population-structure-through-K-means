@@ -2,25 +2,25 @@
 
 **A HapMap python class to include in a work flow with unsupervided learning algorithm for population structure inference.**
 
-Handling genotype data typed at hundreds of thousands of loci is a very time-consuming task, specially for population structure inference. Tools such as STRUCTURE (one of the most used and common softwares design for this purpose) based on **Markov chain Monte Carlo** are very time and memory consuming. 
+Handling genotype data typed at hundreds of thousands of loci is a very time-consuming task, specially for population structure inference. Tools such as STRUCTURE (one of the most used and common softwares design for this purpose) based on *Markov chain Monte Carlo* are very time and memory consuming. 
 
-From the perspective of machine learning, dealing with high-dimensional data usually involves preprocessing the data with dimension reduction and feature selection techniques. In addition, clustering techniques such as k-Means, in combination with dimension reduction algorithms such as *Principal component analysis* (**PCA**), may outperforme traditional algorithms and population structure techniques in terms of computational time, while competing in precision.  
+From the perspective of machine learning, dealing with high-dimensional data usually involves preprocessing the data with dimension reduction and feature selection techniques. In addition, clustering techniques such as *k-Means*, in combination with dimension reduction algorithms such as *Principal component analysis* (**PCA**), may outperforme traditional algorithms and population structure techniques in terms of computational time, while competing in precision.  
 
 The pipline described in this repository follows a logical process that involves:
 
 - **Filtering and extracting useful genetic information for a properly configuration of the genetic matrix (working with HapMap files)**
   * Using the *HapMap_organizer.py* in order to decode the HapMap structure and contruct a customized genetic-marker matrix for population structure inference, this preprocessing involves:
-     * lkdfjñlkdf
-- **Imputation of nan values present in the result matrix**
+     * Extraction and/or addition of homozygous and heterozygous
+     * Imputation of nan values present in the result matrix**
 - **Selecting the best possible principal components to represent the data**
 - **Apply k-means algorithm to the new features for population inference**
 
 **Description about the format and datatype:**
 
-The Hapmap Project was initiated in 2001 by the International HapMap Consortium. Its database is freely available to the public through the NCBI database dbSNP. The Project is also described at Nature 426 :789-796, 2003 [PMID: 14685227]. The file format estabilished through the project is also used in others projects and species.
+The Hapmap Project was initiated in 2001 by the International HapMap Consortium. Its database is freely available to the public through the NCBI database dbSNP. The Project is also described at Nature 426 :789-796, 2003 [PMID: 14685227]. The file format estabilished through the project is also used in others projects and **species** (* such as plant species and commonly used in the construction of genetic arrays with SNP markers for GWAS analysis*).
 The Hapmap file format is a table which consists of 11 columns plus one column for each sample genotyped. The first row contains the header labels of your samples, and each additional row contains all the information associated with a single SNP. You can get a Hapmap file by chromosome or a general file.
 
-The tables usually contains the following attributes:
+Therefore, the HapMap files are structured following an stantard format containing the following attributes:
 
 - **rs#** contains the SNP identifier;
 - **alleles** contains SNP alleles according to NCBI database dbSNP;
@@ -35,7 +35,7 @@ The tables usually contains the following attributes:
 - **QCcode** contains the quality control for all entries;
 **subsequently, the list of sample names**.
 
-Gentoypes follows the **IUPAC** system for nucleotide codification:
+**SNP** follows the **IUPAC** system for nucleotide codification:
 
 | Nucleotide | Common display | Meaning |
 | :---: | :---: | :---: |
