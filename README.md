@@ -1,6 +1,6 @@
 # From HapMap to population structure throught K-means
 
-**A HapMap python class to include in a work flow with unsupervided learning algorithm for population structure inference.**
+**A HapMap python class for diploid species to include in a work flow with unsupervided learning algorithm for population structure inference.**
 
 Handling genotype data typed at hundreds of thousands of loci is a very time-consuming task, specially for population structure inference. Tools such as STRUCTURE (one of the most used and common softwares design for this purpose) based on *Markov chain Monte Carlo* are very time and memory consuming. 
 
