@@ -1,6 +1,6 @@
 # From HapMap to population structure throught K-means
 
-**A HapMap python class for diploid species to include in a work flow with unsupervided learning algorithm for population structure inference.**
+**An example of HapMap python class for diploid species to include in a work flow with unsupervided learning algorithm for population structure inference.**
 
 Handling genotype data typed at hundreds of thousands of loci is a very time-consuming task, specially for population structure inference. Tools such as STRUCTURE (one of the most used and common softwares design for this purpose) based on *Markov chain Monte Carlo* are very time and memory consuming. 
 
@@ -8,8 +8,7 @@ From the perspective of machine learning, dealing with high-dimensional data usu
 
 The pipline described in this repository follows a logical process and is intendend to be an example of how to apply *HapMap_organizer.py* classes that involves:
 
-- **Filtering and extracting useful genetic information for a properly configuration of the genetic matrix (working with HapMap files)**
-  * Using the *HapMap_organizer.py* in order to decode the HapMap structure and contruct a customized genetic-marker matrix for population structure inference, this preprocessing involves:
+- **Filtering and extracting useful genetic information for a properly configuration of the genetic matrix (working with HapMap files)** in order to decode the HapMap structure and contruct a customized genetic-marker matrix for population structure inference, this preprocessing involves:
      * Extraction and/or addition of homozygous and heterozygous
      * Substracting markers base on missing_data percentage 
      * Substracting markers base on MAF (*Minor allele frequency*)  
