@@ -6,7 +6,7 @@ Handling genotype data typed at hundreds of thousands of loci is a very time-con
 
 From the perspective of machine learning, dealing with high-dimensional data usually involves preprocessing the data with dimension reduction and feature selection techniques. In addition, clustering techniques such as *k-Means*, in combination with dimension reduction algorithms such as *Principal component analysis* (**PCA**), may outperforme traditional algorithms and population structure techniques in terms of computational time, while competing in precision.  
 
-The pipline described in this repository follows a logical process that involves:
+The pipline described in this repository follows a logical process and is intendend to be an example of how to apply *HapMap_organizer.py* classes that involves:
 
 - **Filtering and extracting useful genetic information for a properly configuration of the genetic matrix (working with HapMap files)**
   * Using the *HapMap_organizer.py* in order to decode the HapMap structure and contruct a customized genetic-marker matrix for population structure inference, this preprocessing involves:
