@@ -1,7 +1,10 @@
 
 ## **What is a HapMap file?**
 
-The Hapmap Project was initiated in 2001 by the International HapMap Consortium. Its database is freely available to the public through the NCBI database dbSNP. The Project is also described at Nature 426 :789-796, 2003 [PMID: 14685227]. The file format estabilished through the project is also used in others projects and **species** (* such as plant species and commonly used in the construction of genetic arrays with SNP markers for GWAS analysis*).
+The Hapmap Project was initiated in 2001 by the International HapMap Consortium. Its database is freely available to the public through the NCBI database dbSNP. The file format estabilished through the project is also used in others projects and **species** (such as plant species) and commonly used in the construction of genetic arrays of *single nucleotide polymorphisms* or **SNP**. 
+
+SNP alleles tend to be correlated together in a predictable way, known as a haplotype, this phenomenon of correlation between SNPs is mediated by *linkage disequilibrium* (**LD**) .LD and haplotypes are a reflection of the shared ancestry of chromosomes even in outbred populations and are usually related to physical distance. The HapMap project is revealing an increasingly complex view of the relationships between genomic entities based on their patterns of inheritance, therfore, HapMaps files describe the genotipic structure of a given population, and may give acces to difference and similarities within concrete regions of their genomes.
+
 The Hapmap file format is a table which consists of 11 columns plus one column for each sample genotyped. The first row contains the header labels of your samples, and each additional row contains all the information associated with a single SNP. You can get a Hapmap file by chromosome or a general file.
 
 Therefore, the HapMap files are structured following an stantard format containing the following attributes:
@@ -42,6 +45,6 @@ Therefore, the HapMap files are structured following an stantard format containi
 
 
 
-## **why should it be useful to automate data wrangling throught OOP?**
+## **Why should it be useful to automate data wrangling throught OOP?**
 
-These files contains a lot of information about the genotyped population 
+These files contains a lot of information about the genotyped population, from minor allele frequencies (variants with the lowest frequency) to physical position of a certain marker in the genome and even the proportion of heterozygous or homozygous individuals for a given allele, all these may rapidly be access through atributes derived from a hapmap class instead of data wrangling manually, speeding up the efficiency of data construction and analysis.
