@@ -41,6 +41,7 @@ Therefore, the HapMap files are structured following an stantard format containi
 | . or - | - | Gap of indeterminate lenght |
 
 
-**why should it be useful to automate data wrangling throught OOP?**
+
+## **why should it be useful to automate data wrangling throught OOP?**
 
 These files contains a lot of information about the genotyped population 
