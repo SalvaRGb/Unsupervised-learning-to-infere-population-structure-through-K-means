@@ -1,5 +1,5 @@
 
-**Description about the format and datatype:**
+**## Whatis a HapMap file, description about the format and datatype:**
 
 The Hapmap Project was initiated in 2001 by the International HapMap Consortium. Its database is freely available to the public through the NCBI database dbSNP. The Project is also described at Nature 426 :789-796, 2003 [PMID: 14685227]. The file format estabilished through the project is also used in others projects and **species** (* such as plant species and commonly used in the construction of genetic arrays with SNP markers for GWAS analysis*).
 The Hapmap file format is a table which consists of 11 columns plus one column for each sample genotyped. The first row contains the header labels of your samples, and each additional row contains all the information associated with a single SNP. You can get a Hapmap file by chromosome or a general file.
@@ -40,4 +40,7 @@ Therefore, the HapMap files are structured following an stantard format containi
 | N | A/C/G/T | any base |
 | . or - | - | Gap of indeterminate lenght |
 
+
 **why should it be useful to automate data wrangling throught OOP?**
+
+These files contains a lot of information about the genotyped population 
