@@ -53,4 +53,4 @@ These files contains a lot of information about the genotyped population, from m
 
 ## **Dependencies**
 
-The purpose of this repository is mearly ilustrative, therefore the classes created in these python scripts relies on some of the most common python toolkits for data preprocessing such as pandas and numpy data structures or skit-learn operations.
+The purpose of this repository is mearly ilustrative, therefore the classes created in these python scripts relies on some of the most common python toolkits for data preprocessing such as **pandas** and **numpy** data structures or **skit-learn** operations.
