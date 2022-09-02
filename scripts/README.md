@@ -48,3 +48,9 @@ Therefore, the HapMap files are structured following an stantard format containi
 ## **Why should it be useful to handle HapMaps throught OOP?**
 
 These files contains a lot of information about the genotyped population, from minor allele frequencies (variants with the lowest frequency) to physical positions of a given marker within the genome or within a certain chromosome, even the proportion of heterozygous or homozygous individuals for a given allele could be estimated. All these may rapidly be access through atributes derived from a hapmap class instead of data wrangling manually, speeding up the efficiency of data construction arrays for further and more complex analysis.
+
+
+
+## **Dependencies**
+
+The purpose of this repository is mearly ilustrative, therefore the classes created in these python scripts relies on some of the most common python toolkits for data preprocessing such as pandas and numpy data structures or skit-learn operations.
